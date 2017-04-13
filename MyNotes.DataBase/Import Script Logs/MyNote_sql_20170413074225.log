@@ -1,0 +1,10 @@
+13.4.2017 г. 22:42:25	This log contains information about the import operation of the script 'MyNote.sql' into project 'MyNotes.DataBase' on computer 'PLAMENA' by user'Пламена.
+13.4.2017 г. 22:42:25	Started importing file: D:\Projects\MyNotes\MyNotes.DB\MyNote.sql 
+13.4.2017 г. 22:42:25	File name D:\Projects\MyNotes\MyNotes.DB\MyNote.sql (size: 2529)
+13.4.2017 г. 22:42:25	Parsing import script
+13.4.2017 г. 22:42:25	Total number of batches in script: 34
+13.4.2017 г. 22:42:25	Total number of statements in script: 0
+13.4.2017 г. 22:42:25	The script was successfully imported into the project.
+13.4.2017 г. 22:42:25	In the script that you provided to the import operation, one or more statements were not fully understood. These statements were moved to the ScriptsIgnoredOnImport.sql file. Review the file contents for additional information.
+13.4.2017 г. 22:42:25	A summary of the import was saved to the following location: D:\Projects\MyNotes\MyNotes.DataBase\Import Script Logs\MyNote_sql_20170413074225.log
+13.4.2017 г. 22:42:25	Click Finish to continue...

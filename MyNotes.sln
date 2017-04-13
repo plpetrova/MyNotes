@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNotes.Web", "MyNotes\MyNotes.Web.csproj", "{BA8FE1BC-35AF-4F79-BEAF-38117974D32B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNotes.DataAccess", "MyNotes.DataAccess\MyNotes.DataAccess.csproj", "{CDBEDF30-3018-4DCA-99F9-F0E0BFEE6AAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA8FE1BC-35AF-4F79-BEAF-38117974D32B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8FE1BC-35AF-4F79-BEAF-38117974D32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8FE1BC-35AF-4F79-BEAF-38117974D32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8FE1BC-35AF-4F79-BEAF-38117974D32B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDBEDF30-3018-4DCA-99F9-F0E0BFEE6AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBEDF30-3018-4DCA-99F9-F0E0BFEE6AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBEDF30-3018-4DCA-99F9-F0E0BFEE6AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBEDF30-3018-4DCA-99F9-F0E0BFEE6AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

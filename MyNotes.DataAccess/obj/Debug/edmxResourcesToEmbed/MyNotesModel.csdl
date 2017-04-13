@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyNotesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MyNotesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="MyNotesModel.sysdiagrams" />
+    <EntitySet Name="User" EntityType="MyNotesModel.User" />
+    <EntitySet Name="Notes" EntityType="MyNotesModel.Notes" />
+    <AssociationSet Name="FK_Notes_User" Association="MyNotesModel.FK_Notes_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Notes" EntitySet="Notes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Notes" Relationship="MyNotesModel.FK_Notes_User" FromRole="User" ToRole="Notes" />
+  </EntityType>
+  <EntityType Name="Notes">
+    <Key>
+      <PropertyRef Name="NoteID" />
+    </Key>
+    <Property Name="NoteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="NoteContent" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfCreation" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EndTime" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="User" Relationship="MyNotesModel.FK_Notes_User" FromRole="Notes" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_Notes_User">
+    <End Type="MyNotesModel.User" Role="User" Multiplicity="1" />
+    <End Type="MyNotesModel.Notes" Role="Notes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Notes">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

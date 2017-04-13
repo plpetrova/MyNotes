@@ -1,0 +1,9 @@
+D:\Projects\MyNotes\MyNotes.DataAccess\bin\Debug\MyNotes.DataAccess.dll.config
+D:\Projects\MyNotes\MyNotes.DataAccess\bin\Debug\MyNotes.DataAccess.dll
+D:\Projects\MyNotes\MyNotes.DataAccess\bin\Debug\MyNotes.DataAccess.pdb
+D:\Projects\MyNotes\MyNotes.DataAccess\bin\Debug\EntityFramework.dll
+D:\Projects\MyNotes\MyNotes.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\MyNotes\MyNotes.DataAccess\bin\Debug\EntityFramework.xml
+D:\Projects\MyNotes\MyNotes.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\MyNotes\MyNotes.DataAccess\obj\Debug\MyNotes.DataAccess.dll
+D:\Projects\MyNotes\MyNotes.DataAccess\obj\Debug\MyNotes.DataAccess.pdb
